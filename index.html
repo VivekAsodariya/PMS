@@ -3,21 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio Manager</title>
+  <title>Portfolio Management System</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f0f4f8;
-      text-align: center;
-      padding: 50px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
     }
-    h1 {
-      color: #007acc;
+    header {
+      background: #2d3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1abc9c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Welcome to My Portfolio Manager</h1>
-  <p>This is a test deployment using GitHub Pages.</p>
+
+  <header>
+    <h1>📊 Portfolio Management System</h1>
+    <p>Manage your financial and project portfolios in one place</p>
+  </header>
+
+  <nav>
+    <a href="#financial">Financial Portfolio</a>
+    <a href="#projects">Project Portfolio</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="financial">
+      <h2>💰 Financial Portfolio</h2>
+      <table>
+        <tr>
+          <th>Asset</th>
+          <th>Value</th>
+          <th>Change</th>
+        </tr>
+        <tr>
+          <td>Stocks</td>
+          <td>$12,000</td>
+          <td>+5%</td>
+        </tr>
+        <tr>
+          <td>Mutual Funds</td>
+          <td>$7,500</td>
+          <td>+3.2%</td>
+        </tr>
+        <tr>
+          <td>Crypto</td>
+          <td>$2,800</td>
+          <td>-2%</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>📁 Project Portfolio</h2>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>Status</th>
+          <th>Deadline</th>
+        </tr>
+        <tr>
+          <td>Portfolio Website</td>
+          <td>In Progress</td>
+          <td>April 10, 2025</td>
+        </tr>
+        <tr>
+          <td>Client Dashboard</td>
+          <td>Planned</td>
+          <td>May 1, 2025</td>
+        </tr>
+        <tr>
+          <td>API Integration</td>
+          <td>Completed</td>
+          <td>March 20, 2025</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
 </body>
 </html>
